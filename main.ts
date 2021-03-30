@@ -2,11 +2,23 @@ let strip = neopixel.create(DigitalPin.P0, 40, NeoPixelMode.RGB)
 strip.clear()
 basic.forever(function () {
     strip.clear()
-    for (let A = 0; A <= 19; A++) {
-        strip.setPixelColor(A, neopixel.rgb(0, 0, 255))
-        strip.show()
-        basic.pause(50)
-    }
+    custom.foo(
+    0,
+    16,
+    3,
+    3,
+    250,
+    20
+    )
+    basic.pause(100)
+    custom.foo(
+    17,
+    19,
+    3,
+    3,
+    250,
+    80
+    )
     custom.foo(
     20,
     27,
